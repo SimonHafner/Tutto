@@ -3,10 +3,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DiceTest {
+    Dice dice = new Dice();
 
     @Test
     void throwDice() {
-        Dice dice = new Dice();
         // By creating a new dice, the die is set to 0 (i.e. undefined) by default.
         int dieOne = dice.getDie();
         dice.throwDice();
